@@ -15,7 +15,7 @@ Potete ad esempio provare ad usare questo programma per inserire N voti di scuol
 let result = sommaNumeri();
 let media = mediaAritmetica(result);
 console.log("La somma dei numeri che hai scelto è: " + result);
-console.log("La media dei numeri che hai scelto è: " + media);
+console.log("La media dei numeri che hai scelto è: " + media.toFixed(2));
 
 
 
@@ -41,7 +41,7 @@ function sommaNumeri() {
 
 function mediaAritmetica(somma) {
     let numeriUtente = parseInt(prompt("Quanti numeri hai inserito in totale?"));
-    let media = somma / numeriUtente.toFixed(2);
+    let media = somma / numeriUtente;
     return media;
 }
 
