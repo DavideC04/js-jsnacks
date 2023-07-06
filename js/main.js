@@ -39,12 +39,9 @@ function sommaNumeri() {
 
 }
 
-function mediaAritmetica(arrayNumbers) {
-    let somma = 0;
-    for (let i = 0; i < arrayNumbers.length; i++) {
-        somma += arrayNumbers[i];
-    }
-    let media = somma / arrayNumbers.length;
+function mediaAritmetica(somma) {
+    let numeriUtente = parseInt(prompt("Quanti numeri hai inserito in totale?"));
+    let media = somma / numeriUtente.toFixed(2);
     return media;
 }
 
